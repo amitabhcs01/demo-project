@@ -147,9 +147,10 @@
   </div>
 
   <script>
-    document.getElementById("REGISTER").addEventListener("click", function() {
-      window.location.href = "mainpage.html";
-    });
+ document.getElementById("registerBtn").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent form submission
+  window.location.href = "mainpage.html";
+});
   </script>
 </body>
 </html>
